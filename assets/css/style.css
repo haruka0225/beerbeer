@@ -1,9 +1,10 @@
-h1 {
-  color: red;
-}
-
 .btn {
-  background-color: lightblue;
+  font-size: large;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  text-align: center;
 }
 
 .logo {
@@ -37,7 +38,23 @@ h1 {
 }
 
 .logo ul li:nth-child(3) {
-  font-style: italic;
+  font-weight: bold;
+}
+
+.logo ul li:nth-child(4) {
+  color: #F90;
+}
+
+.logo ul li:nth-child(5) {
+  font-weight: bold;
+}
+
+.logo ul li:nth-child(6) {
+  color: #F00;
+}
+
+.logo ul li:nth-child(7) {
+  font-weight: bold;
 }
 
 .logo ul li:last-child {
