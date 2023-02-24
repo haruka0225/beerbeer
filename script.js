@@ -1,7 +1,13 @@
 $(function () {
-    // console.log("hello world");
+
+   
     // $(jqueryオブジェクト).val()で入力された値を取得
     $(".btn").on("click", function () {
+
+
+
+
+      
       // クリックされたら波カッコの処理が走る
       let postNum = $(".post").val();
       // dataは必ず連想配列で渡すことが決められています。
