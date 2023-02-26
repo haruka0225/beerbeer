@@ -1,56 +1,89 @@
-h1{
+body{
+    background-color: #a99fbd;
+}
+// ↑寂しいかなと思って色付けたけど、う～ん消した方が良いのかな、、、
+// センス求むぅぅううヾ(⌐■_■)ノ♪
+
+h1 {
     color: red;
 }
 
-.btn{
-    background-color: lightblue
-    ;
+.btn {
+    background-color: lightblue;
 }
 
 // beerロゴ
 
 .logo {
-    margin : 0 auto 40px;
-    width : 100%;
-    font-size : 24px;
-    text-align : center;
-    overflow : hidden;
-    }
-    .logo ul{
-    margin:0;
-    display : inline-block;
+    margin: 0 auto 40px;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo ul {
+    margin: 0;
+    display: inline-block;
     padding-left: 100%;
-    white-space : nowrap;
-    line-height : 1em;
-    animation : scrollSample02 15s linear infinite;
-    }
-    .logo ul li{
-    display:inline;
-    margin:0 100px 0 0;
-    }
-    .logo ul li:nth-child(1){
-    font-weight:bold;
-    }
-    .logo ul li:nth-child(2){
-    color:#F00;
-    }
-    .logo ul li:nth-child(3){
-    font-style:italic;
-    }
-    .logo ul li:last-child{
-    color:#F90;
-    margin:0;
-    }
-    @keyframes scrollSample02{
-    0% { transform: translateX(0)}
-    100% { transform: translateX(-100%)}
+    white-space: nowrap;
+    line-height: 1em;
+    animation: scrollSample02 15s linear infinite;
+}
+
+.logo ul li {
+    display: inline;
+    margin: 0 100px 0 0;
+}
+
+.logo ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+.logo ul li:nth-child(2) {
+    color: #F00;
+}
+
+.logo ul li:nth-child(3) {
+    font-style: italic;
+}
+
+.logo ul li:last-child {
+    color: #F90;
+    margin: 0;
+}
+
+@keyframes scrollSample02 {
+    0% {
+        transform: translateX(0)
     }
 
-// result
-.result{
-    img{
-        margin: 100px 0 50px 100px;
-        height: 300px;
-        width: auto;
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+// results
+.results {
+    display: flex;
+    justify-content: center;
+
+    // result🍺
+    .result {
+        img {
+            margin: 100px 50px 50px 100px;
+            height: 300px;
+            width: auto;
+        }
+    }
+    // result-food🍕
+    .result-food{
+        margin: 150px 100px 50px 100px;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        ::before{
+            content: "おすすめにゅー >>>  ";
+        }
+        color: #864e66;
     }
 }

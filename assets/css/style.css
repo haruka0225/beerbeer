@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  background-color: #a99fbd;
+}
+
 h1 {
   color: red;
 }
@@ -53,8 +58,21 @@ h1 {
     transform: translateX(-100%);
   }
 }
-.result img {
-  margin: 100px 0 50px 100px;
+.results {
+  display: flex;
+  justify-content: center;
+}
+.results .result img {
+  margin: 100px 50px 50px 100px;
   height: 300px;
   width: auto;
+}
+.results .result-food {
+  margin: 150px 100px 50px 100px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #864e66;
+}
+.results .result-food ::before {
+  content: "おすすめにゅー >>>  ";
 }/*# sourceMappingURL=style.css.map */

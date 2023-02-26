@@ -15,19 +15,24 @@ $(function () {
       .done(function (response) {
         //通信成功時の処理
         //成功したとき実行したいスクリプトを記載
-        console.log(response);
-        // beerのこんそーる表示
+
+        // console.log(response);/* ←こんそーるに表示されるか確認後コメントアウト */
+        // 🍺beerのこんそーる表示
         // console.log(response[0]);
         console.log(response[0].image_url);
         // beerのHTML(画面上)への画像表示
         $(".result").html(`<img src="${response[0].image_url}" alt="">`);
-        // food
+
+        // 🍕food
+        // console.log(response[0]);
         // console.log(response[0].food_pairing[0]);
         // console.log(response[0].food_pairing[1]);
         // console.log(response[0].food_pairing[2]);
-        // for (let i = 0; i < 4; i++) {
-        //   $(".result").html(`<presponse[0].food_pairing[i]></p>`);
-        // }
+        // おすすめfoodの文字をHTML(画面上)に表示
+        for (let i = 0; i < 3; i++) {
+          // console.log(response[0].food_pairing[0]); /* ←こんそーるで表示されるか確認後コメントアウト */
+          $(".result-food").html(`<p>"${response[0].food_pairing[i]}"</p>`);
+        }
       })
       .fail(function (xhr) {
         //通信失敗時の処理
