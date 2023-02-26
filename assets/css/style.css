@@ -1,12 +1,62 @@
 .btn {
-  font-size: large;
-  height: 100px;
-  width: 100px;
   border-radius: 50%;
-  background-color: yellow;
-  text-align: center;
 }
 
+#button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#button.jump {
+  animation: 1s ease-in 0s 1 jump;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  30% {
+    transform: translateY(-30px) rotateZ(10deg);
+  }
+  35% {
+    transform: translateY(-30px) rotateZ(-30deg);
+  }
+  45% {
+    transform: translateY(-30px) rotateZ(30deg);
+  }
+  55% {
+    transform: translateY(-30px) rotateZ(-30deg);
+  }
+  65% {
+    transform: translateY(-30px) rotateZ(30deg);
+  }
+  70% {
+    transform: translateY(-30px) rotateZ(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+}
+.animation {
+  width: 100px;
+  height: 100px;
+  background: #F90;
+  animation-name: animation-haniwaman;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes animation-haniwaman {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .logo {
   margin: 0 auto 40px;
   width: 100%;

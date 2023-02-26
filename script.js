@@ -40,3 +40,12 @@ $(function () {
       });
   })
 })
+
+
+
+let button = document.getElementById("button");
+button.addEventListener("mousedown", () => {
+ button.classList.remove("jump");
+ void button.offsetWidth;
+ button.classList.add("jump");
+});
