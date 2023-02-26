@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  background-color: #a99fbd;
-}
-
 h1 {
   color: red;
 }
@@ -75,4 +71,8 @@ h1 {
 }
 .results .result-food ::before {
   content: "おすすめにゅー >>>  ";
+}
+
+body {
+  background-color: #a99fbd;
 }/*# sourceMappingURL=style.css.map */
