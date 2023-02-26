@@ -16,9 +16,10 @@ $(function () {
         //通信成功時の処理
         //成功したとき実行したいスクリプトを記載
         console.log(response);
-        // beer
+        // beerのこんそーる表示
         // console.log(response[0]);
         console.log(response[0].image_url);
+        // beerのHTML(画面上)への画像表示
         $(".result").html(`<img src="${response[0].image_url}" alt="">`);
         // food
         // console.log(response[0].food_pairing[0]);

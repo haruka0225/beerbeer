@@ -1,7 +1,7 @@
 h1{
     color: red;
 }
-// TO DO>>> ↑このh1の内容確認
+
 .btn{
     background-color: lightblue
     ;
@@ -45,3 +45,12 @@ h1{
     0% { transform: translateX(0)}
     100% { transform: translateX(-100%)}
     }
+
+// result
+.result{
+    img{
+        margin: 100px 0 50px 100px;
+        height: 300px;
+        width: auto;
+    }
+}
