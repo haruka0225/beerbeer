@@ -11,6 +11,10 @@ img {
   border-radius: 50%;
 }
 
+.a {
+  text-align: center;
+}
+
 #button {
   display: inline-block;
   cursor: pointer;
