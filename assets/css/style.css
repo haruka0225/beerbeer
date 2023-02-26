@@ -69,4 +69,9 @@
   100% {
     transform: translateX(-100%);
   }
+}
+.result img {
+  margin: 100px 0 50px 100px;
+  height: 300px;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */
