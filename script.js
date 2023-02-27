@@ -31,7 +31,7 @@ $(function () {
         // おすすめfoodの文字をHTML(画面上)に表示
         for (let i = 0; i < 3; i++) {
           // console.log(response[0].food_pairing[0]); /* ←こんそーるで表示されるか確認後コメントアウト */
-          $(".result-food").html(`<p>"${response[0].food_pairing[i]}"</p>`);
+          $(".result-food").append(`<p>"${response[0].food_pairing[i]}"</p>`);
         }
       })
       .fail(function (xhr) {
