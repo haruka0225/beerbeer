@@ -1,63 +1,104 @@
-body{
+body {
     background-color: antiquewhite;
     opacity: 0.8;
 }
-    img{
+
+img {
     padding: 50px;
 }
 
 
 // ビールボタン形
-.btn{
+.btn {
     border-radius: 50%;
-    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.a{
+.a {
     text-align: center;
     padding: 50px;
 }
 
 // ボタンクリックしたらまわる
-#button
-{
-  display: inline-block;
-  cursor: pointer;
-}
-#button.jump
-{
-  animation: 1s ease-in 0s 1 jump;
-  
-}
-@keyframes jump
-{
-  0% { transform: translateY(0px) rotateZ(0deg); }
-  30% { transform: translateY(-30px) rotateZ(10deg); }
-  35% { transform: translateY(-30px) rotateZ(-30deg); }
-  45% { transform: translateY(-30px) rotateZ(30deg); }
-  55% { transform: translateY(-30px) rotateZ(-30deg); }
-  65% { transform: translateY(-30px) rotateZ(30deg); }
-  70% { transform: translateY(-30px) rotateZ(10deg); }
-  100% { transform: translateY(0px) rotateZ(0deg); }
+#button {
+    display: inline-block;
+    cursor: pointer;
 }
 
+#button.jump {
+    animation: 1s ease-in 0s 1 jump;
+
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px) rotateZ(0deg);
+    }
+
+    30% {
+        transform: translateY(-30px) rotateZ(10deg);
+    }
+
+    35% {
+        transform: translateY(-30px) rotateZ(-30deg);
+    }
+
+    45% {
+        transform: translateY(-30px) rotateZ(30deg);
+    }
+
+    55% {
+        transform: translateY(-30px) rotateZ(-30deg);
+    }
+
+    65% {
+        transform: translateY(-30px) rotateZ(30deg);
+    }
+
+    70% {
+        transform: translateY(-30px) rotateZ(10deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotateZ(0deg);
+    }
+}
+
+.animation {
+    position: relative;
+}
+
+
+.animep {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    color: white;
+
+}
 
 // ボタンクリックで黄色ラインが右にはしる
 .animation {
     width: 100px;
-	height: 100px;
-	background: #F90;
-	animation-name: animation-haniwaman;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count:1;
-    // animation-fill-mode: fowards;
-   
+    height: 100px;
+    background: #F90;
+    animation-name: animation-haniwaman;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
+
 @keyframes animation-haniwaman {
-	0% {width: 100px;}
-	100% {width: 100%;}
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 
@@ -126,28 +167,25 @@ body{
 @keyframes scrollSample02 {
     0% {
         transform: translateX(0)
-        
     }
 
     100% {
         transform: translateX(-100%)
-    
-        
     }
-    
+
 
 }
 
 
 
-    // result
+// result
 
-   .result{
-        img {
-            // margin:100px 0 50px 100px;
-            height: 300px;
-            width:auto;
-text-align: center;
-        }
-
+.result {
+    img {
+        // margin:100px 0 50px 100px;
+        height: 300px;
+        width: auto;
+        text-align: center;
     }
+
+}

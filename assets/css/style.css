@@ -53,6 +53,17 @@ img {
   }
 }
 .animation {
+  position: relative;
+}
+
+.animep {
+  position: absolute;
+  left: 500px;
+  top: 50px;
+  color: white;
+}
+
+.animation {
   width: 100px;
   height: 100px;
   background: #F90;
@@ -61,6 +72,7 @@ img {
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animation-haniwaman {
