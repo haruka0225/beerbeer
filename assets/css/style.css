@@ -9,10 +9,12 @@ img {
 
 .btn {
   border-radius: 50%;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .a {
   text-align: center;
+  padding: 50px;
 }
 
 #button {
@@ -59,7 +61,6 @@ img {
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
-  animation-direction: forwards;
 }
 
 @keyframes animation-haniwaman {

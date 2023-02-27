@@ -53,6 +53,9 @@ button.addEventListener("mousedown", () => {
   button.classList.add("jump");
 });
 
+
+
+
 // ボタンクリックで黄色ラインが右にはしる
 
 $(function () {
