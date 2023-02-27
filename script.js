@@ -1,5 +1,8 @@
 $(function () {
-  // console.log("hello world");
+
+
+
+
   // $(jqueryオブジェクト).val()で入力された値を取得
   $(".btn").on("click", function () {
     // console.log("tgif");
@@ -44,3 +47,24 @@ $(function () {
       });
   })
 })
+
+
+// ボタン押すと回る
+let button = document.getElementById("button");
+button.addEventListener("mousedown", () => {
+  button.classList.remove("jump");
+  void button.offsetWidth;
+  button.classList.add("jump");
+});
+
+// ボタンクリックで黄色ラインが右にはしる
+
+$(function () {
+  $('.animation').hide();
+
+  $('#button').on('click', function () {
+    $('.animation').show('slow');
+    
+    });
+  });
+

@@ -1,12 +1,81 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 h1 {
   color: red;
+=======
+body {
+  background-color: antiquewhite;
+  opacity: 0.8;
+}
+
+img {
+  padding: 50px;
+>>>>>>> 511b1ea41631c0fbb2489f953e5abb4dc7e2b0a6
 }
 
 .btn {
-  background-color: lightblue;
+  border-radius: 50%;
 }
 
+.a {
+  text-align: center;
+}
+
+#button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#button.jump {
+  animation: 1s ease-in 0s 1 jump;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  30% {
+    transform: translateY(-30px) rotateZ(10deg);
+  }
+  35% {
+    transform: translateY(-30px) rotateZ(-30deg);
+  }
+  45% {
+    transform: translateY(-30px) rotateZ(30deg);
+  }
+  55% {
+    transform: translateY(-30px) rotateZ(-30deg);
+  }
+  65% {
+    transform: translateY(-30px) rotateZ(30deg);
+  }
+  70% {
+    transform: translateY(-30px) rotateZ(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+}
+.animation {
+  width: 100px;
+  height: 100px;
+  background: #F90;
+  animation-name: animation-haniwaman;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+}
+
+@keyframes animation-haniwaman {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .logo {
   margin: 0 auto 40px;
   width: 100%;
@@ -21,7 +90,7 @@ h1 {
   padding-left: 100%;
   white-space: nowrap;
   line-height: 1em;
-  animation: scrollSample02 15s linear infinite;
+  animation: scrollSample02 15s linear 1;
 }
 
 .logo ul li {
@@ -38,7 +107,23 @@ h1 {
 }
 
 .logo ul li:nth-child(3) {
-  font-style: italic;
+  font-weight: bold;
+}
+
+.logo ul li:nth-child(4) {
+  color: #F90;
+}
+
+.logo ul li:nth-child(5) {
+  font-weight: bold;
+}
+
+.logo ul li:nth-child(6) {
+  color: #F00;
+}
+
+.logo ul li:nth-child(7) {
+  font-weight: bold;
 }
 
 .logo ul li:last-child {
@@ -54,6 +139,7 @@ h1 {
     transform: translateX(-100%);
   }
 }
+<<<<<<< HEAD
 .results {
   display: flex;
   justify-content: center;
@@ -75,4 +161,10 @@ h1 {
 
 body {
   background-color: #a99fbd;
+=======
+.result img {
+  height: 300px;
+  width: auto;
+  text-align: center;
+>>>>>>> 511b1ea41631c0fbb2489f953e5abb4dc7e2b0a6
 }/*# sourceMappingURL=style.css.map */

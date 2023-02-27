@@ -4,86 +4,219 @@ h1 {
 
 .btn {
     background-color: lightblue;
-}
 
-// beerロゴ
-
-.logo {
-    margin: 0 auto 40px;
-    width: 100%;
-    font-size: 24px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.logo ul {
-    margin: 0;
-    display: inline-block;
-    padding-left: 100%;
-    white-space: nowrap;
-    line-height: 1em;
-    animation: scrollSample02 15s linear infinite;
-}
-
-.logo ul li {
-    display: inline;
-    margin: 0 100px 0 0;
-}
-
-.logo ul li:nth-child(1) {
-    font-weight: bold;
-}
-
-.logo ul li:nth-child(2) {
-    color: #F00;
-}
-
-.logo ul li:nth-child(3) {
-    font-style: italic;
-}
-
-.logo ul li:last-child {
-    color: #F90;
-    margin: 0;
-}
-
-@keyframes scrollSample02 {
-    0% {
-        transform: translateX(0)
+    body {
+        background-color: antiquewhite;
+        opacity: 0.8;
     }
 
-    100% {
-        transform: translateX(-100%)
+    img {
+        padding: 50px;
     }
-}
 
-// results
-.results {
-    display: flex;
-    justify-content: center;
 
-    // result🍺
-    .result {
-        img {
-            margin: 100px 50px 50px 100px;
-            height: 300px;
-            width: auto;
+    // ビールボタン形
+    .btn {
+        border-radius: 50%;
+
+    }
+
+    .a {
+        text-align: center;
+    }
+
+    // ボタンクリックしたらまわる
+    #button {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #button.jump {
+        animation: 1s ease-in 0s 1 jump;
+
+    }
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0px) rotateZ(0deg);
+        }
+
+        30% {
+            transform: translateY(-30px) rotateZ(10deg);
+        }
+
+        35% {
+            transform: translateY(-30px) rotateZ(-30deg);
+        }
+
+        45% {
+            transform: translateY(-30px) rotateZ(30deg);
+        }
+
+        55% {
+            transform: translateY(-30px) rotateZ(-30deg);
+        }
+
+        65% {
+            transform: translateY(-30px) rotateZ(30deg);
+        }
+
+        70% {
+            transform: translateY(-30px) rotateZ(10deg);
+        }
+
+        100% {
+            transform: translateY(0px) rotateZ(0deg);
         }
     }
-    // result-food🍕
-    .result-food{
-        margin: 150px 100px 50px 100px;
-        font-size: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        ::before{
-            content: "おすすめにゅー >>>  ";
-        }
-        color: #864e66;
+
+
+    .animation {
+        width: 100px;
+        height: 100px;
+        background: #F90;
+        animation-name: animation-haniwaman;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: forwards;
+
+
     }
+
+    @keyframes animation-haniwaman {
+        0% {
+            width: 100px;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+
+
+
+    // beerロゴ
+
+    .logo {
+        margin: 0 auto 40px;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+    .logo ul {
+        margin: 0;
+        display: inline-block;
+        padding-left: 100%;
+        white-space: nowrap;
+        line-height: 1em;
+        animation: scrollSample02 15s linear infinite;
+        animation: scrollSample02 15s linear 1;
+    }
+
+    .logo ul li {
+        display: inline;
+        margin: 0 100px 0 0;
+    }
+
+    .logo ul li:nth-child(1) {
+        font-weight: bold;
+    }
+
+    .logo ul li:nth-child(2) {
+        color: #F00;
+    }
+
+    .logo ul li:nth-child(3) {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .logo ul li:nth-child(4) {
+        color: #F90;
+        ;
+    }
+
+    .logo ul li:nth-child(5) {
+        font-weight: bold;
+    }
+
+    .logo ul li:nth-child(6) {
+        color: #F00;
+    }
+
+    .logo ul li:nth-child(7) {
+        font-weight: bold;
+
+    }
+
+    .logo ul li:last-child {
+        color: #F90;
+        margin: 0;
+    }
+
+    @keyframes scrollSample02 {
+        0% {
+            transform: translateX(0)
+        }
+
+        100% {
+            transform: translateX(-100%)
+        }
+
+    }
+
+    // results
+    .results {
+        display: flex;
+        justify-content: center;
+
+        // result🍺
+        .result {
+            img {
+                margin: 100px 50px 50px 100px;
+                height: 300px;
+                width: auto;
+            }
+        }
+
+        // result-food🍕
+        .result-food {
+            margin: 150px 100px 50px 100px;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+            ::before {
+                content: "おすすめにゅー >>>  ";
+            }
+
+            color: #864e66;
+        }
+    }
+
+    body {
+        background-color: #a99fbd;
+    }
+
+    // ↑寂しいかなと思って色付けたけど、う～ん消した方が良いのかな、、、
+    // センス求むぅぅううヾ(⌐■_■)ノ♪
 }
 
-body{
-    background-color: #a99fbd;
+
+
+// result
+
+.result {
+    img {
+        // margin:100px 0 50px 100px;
+        height: 300px;
+        width: auto;
+        text-align: center;
+    }
+
 }
-// ↑寂しいかなと思って色付けたけど、う～ん消した方が良いのかな、、、
-// センス求むぅぅううヾ(⌐■_■)ノ♪
