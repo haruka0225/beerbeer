@@ -13,6 +13,7 @@ $(function () {
       cache: false,        //cacheを使うか使わないかを設定
       dataType: 'json',     //data type script・xmlDocument・jsonなど
       // data: data,           //アクセスするときに必要なデータを記載
+      
     })
       .done(function (response) {
         //通信成功時の処理
@@ -64,7 +65,7 @@ $(function () {
 
   $('#button').on('click', function () {
     $('.animation').show('slow');
-    
-    });
+
   });
+});
 
