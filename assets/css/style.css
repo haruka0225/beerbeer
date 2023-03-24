@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+h1 {
+  color: red;
+=======
 body {
   background-color: antiquewhite;
   opacity: 0.8;
@@ -5,6 +10,7 @@ body {
 
 img {
   padding: 50px;
+>>>>>>> 511b1ea41631c0fbb2489f953e5abb4dc7e2b0a6
 }
 
 .btn {
@@ -157,12 +163,17 @@ img {
     transform: translateX(-100%);
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9a67b402487062ea46293ab001965672e43c1762
 .results {
   display: flex;
   justify-content: center;
 }
 .results .result img {
   margin: 100px 50px 50px 100px;
+<<<<<<< HEAD
   height: 300px;
   width: auto;
 }
@@ -182,4 +193,27 @@ img {
     text-align: center;
     display: block;
   }
+=======
+  height: 300px;
+  width: auto;
+}
+.results .result-food {
+  margin: 150px 100px 50px 100px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #864e66;
+}
+.results .result-food ::before {
+  content: "おすすめにゅー >>>  ";
+}
+
+body {
+  background-color: #a99fbd;
+=======
+.result img {
+  height: 300px;
+  width: auto;
+  text-align: center;
+>>>>>>> 511b1ea41631c0fbb2489f953e5abb4dc7e2b0a6
+>>>>>>> 9a67b402487062ea46293ab001965672e43c1762
 }/*# sourceMappingURL=style.css.map */

@@ -13,18 +13,17 @@ $(function () {
       cache: false,        //cacheを使うか使わないかを設定
       dataType: 'json',     //data type script・xmlDocument・jsonなど
       // data: data,           //アクセスするときに必要なデータを記載
-      
+
     })
       .done(function (response) {
         //通信成功時の処理
         //成功したとき実行したいスクリプトを記載
-        // console.log(response);/* ←こんそーるに表示されるか確認後コメントアウト */
-        // :ビール:beerのこんそーる表示
+<
         // console.log(response[0]);
         console.log(response[0].image_url);
         // beerのHTML(画面上)への画像表示
         $(".result").html(`<img src="${response[0].image_url}" alt="">`);
-        // :ピザ:food
+
         // console.log(response[0]);
         // console.log(response[0].food_pairing[0]);
         // console.log(response[0].food_pairing[1]);
